@@ -1,4 +1,6 @@
 
+-- WEEK 6 ASSIGNMENT: SQL JOINS AND RELATIONSHIPS
+
 -- QUESTION 1: INNER JOIN - Employees and Offices
 
 SELECT
@@ -28,7 +30,8 @@ SELECT
     orders.orderDate,
     orders.shippedDate,
     orders.status,
-    orders.customerNumber
+    orders.customerNumber,
+    customers.customerName
 FROM customers
 RIGHT JOIN orders
     ON customers.customerNumber = orders.customerNumber
